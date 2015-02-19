@@ -13,11 +13,13 @@ void Fibonacci_init(FibonacciArgs *args, FibonacciCtx *ctx) {
     // Put Fib(1)
     int *fib1 = cncCreateItem_fib();
     *fib1 = 1;
-    cncPut_fib(fib1, 1, ctx);
+    // FIXME
+    // cncPut_fib(fib1, 1, ctx);
 
     { // Compute Fib(2) thru Fib(n)
         s64 _n;
-        for (_n = 2; _n <= n; _n++) {
+        // FIXME
+        for (_n = 1; _n <= n; _n++) {
             cncPrescribe_fibStep(_n, ctx);
         }
     }
